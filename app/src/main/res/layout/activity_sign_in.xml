@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignIn">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Light_green"
+        android:padding="16dp"
+        tools:context=".SignUpActivity">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="172dp"
+            android:layout_height="183dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cat1" />
+
+        <TextView
+            android:id="@+id/textViewSlogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Elevate Your Plate\n Nourishing Choices,Vibrant Lives. "
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextUsername"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="19dp"
+            android:backgroundTint="@color/green"
+            android:hint="Email"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextEmail"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="23dp"
+            android:backgroundTint="@color/green"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextPassword"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="@color/green"
+            android:padding="12dp"
+            android:text="SignIn"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/buttonSignUp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="101dp"
+            android:layout_marginBottom="-37dp"
+            android:text="Don't have an account ? signUp" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
